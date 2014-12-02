@@ -13,7 +13,7 @@ import Foundation
 
     Set OTHER_SWIFT_FLAGS = -DDEBUG in your Xcode project target.
 */
-func debugLog(_ body: Any! = nil, filename: String = __FILE__, var functionName: String = __FUNCTION__, line: Int = __LINE__) {
+public func debugLog(_ body: Any! = nil, filename: String = __FILE__, var functionName: String = __FUNCTION__, line: Int = __LINE__) {
     #if DEBUG
         NSLog("\(filename.lastPathComponent):\(line) \(functionName) \(body)")
     #endif
