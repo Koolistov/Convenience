@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-extension NSURL {
+public extension NSURL {
 
     /**
         Returns query parameters as a dictionary
     */
-    func queryParameters() -> [String:AnyObject] {
+    public func queryParameters() -> [String:AnyObject] {
         var info: [String:AnyObject] = [:]
         if let queryString = self.query {
             for parameter in queryString.componentsSeparatedByString("&") {
