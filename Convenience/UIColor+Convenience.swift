@@ -30,7 +30,7 @@ public extension UIColor {
             rgba        = rgba.substringFromIndex(index)
         }
 
-        let scanner = NSScanner(string: hex)
+        let scanner = NSScanner(string: rgba)
         var hexValue: CUnsignedLongLong = 0
         if scanner.scanHexLongLong(&hexValue) {
             if countElements(hex) == 6 {
