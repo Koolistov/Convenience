@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
 
     /**
         Create a color from a hexadecimal string
@@ -18,7 +18,7 @@ extension UIColor {
 
         :param: hex  An hexadecimal string
     */
-    convenience init(hex: String) {
+    public convenience init(hex: String) {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue:  CGFloat = 0.0

@@ -8,9 +8,12 @@
 
 /**
     Repeat a string
+
+    Note: To be able to use this, you need to copy the first line
+    with the 'infix operator' into your module.
 */
 infix operator * { associativity left precedence 145 }
-func * (left: String, right: Int) -> String {
+public func * (left: String, right: Int) -> String {
     if right <= 0 {
         return ""
     }

@@ -14,7 +14,7 @@ import Foundation
     :param: delay     Delay in seconds
     :param: closure   Block to run on the main thread
 */
-func delay(delay: NSTimeInterval, closure:()->()) {
+public func delay(delay: NSTimeInterval, closure:()->()) {
     dispatch_after(
         dispatch_time(
             DISPATCH_TIME_NOW,

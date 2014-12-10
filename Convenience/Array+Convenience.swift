@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Koolistov Pte. Ltd. All rights reserved.
 //
 
-
 extension Array {
 
     /**
