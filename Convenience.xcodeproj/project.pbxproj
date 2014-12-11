@@ -13,7 +13,6 @@
 		C70904151A2E118A006F4C98 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70904141A2E118A006F4C98 /* Logging.swift */; };
 		C70904171A2E11CD006F4C98 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70904161A2E11CD006F4C98 /* Delay.swift */; };
 		C70904191A2E1210006F4C98 /* Array+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70904181A2E1210006F4C98 /* Array+Convenience.swift */; };
-		C709041B1A2E122F006F4C98 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709041A1A2E122F006F4C98 /* String+Convenience.swift */; };
 		C709041D1A2E1388006F4C98 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709041C1A2E1388006F4C98 /* UIColor+Convenience.swift */; };
 		C73948B71A38292700606A5C /* NSURL+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73948B61A38292700606A5C /* NSURL+Convenience.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		C70904141A2E118A006F4C98 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		C70904161A2E11CD006F4C98 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		C70904181A2E1210006F4C98 /* Array+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Convenience.swift"; sourceTree = "<group>"; };
-		C709041A1A2E122F006F4C98 /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
 		C709041C1A2E1388006F4C98 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
 		C73948B61A38292700606A5C /* NSURL+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +85,6 @@
 				C70904141A2E118A006F4C98 /* Logging.swift */,
 				C70904161A2E11CD006F4C98 /* Delay.swift */,
 				C70904181A2E1210006F4C98 /* Array+Convenience.swift */,
-				C709041A1A2E122F006F4C98 /* String+Convenience.swift */,
 				C709041C1A2E1388006F4C98 /* UIColor+Convenience.swift */,
 				C73948B61A38292700606A5C /* NSURL+Convenience.swift */,
 				C70903FB1A2E115D006F4C98 /* Supporting Files */,
@@ -229,7 +226,6 @@
 			files = (
 				C70904151A2E118A006F4C98 /* Logging.swift in Sources */,
 				C70904171A2E11CD006F4C98 /* Delay.swift in Sources */,
-				C709041B1A2E122F006F4C98 /* String+Convenience.swift in Sources */,
 				C70904191A2E1210006F4C98 /* Array+Convenience.swift in Sources */,
 				C73948B71A38292700606A5C /* NSURL+Convenience.swift in Sources */,
 				C709041D1A2E1388006F4C98 /* UIColor+Convenience.swift in Sources */,
