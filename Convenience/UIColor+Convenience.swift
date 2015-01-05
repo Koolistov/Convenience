@@ -30,10 +30,10 @@ public extension UIColor {
             rgba        = rgba.substringFromIndex(index)
         }
 
-        let scanner = NSScanner(string: hex)
+        let scanner = NSScanner(string: rgba)
         var hexValue: CUnsignedLongLong = 0
         if scanner.scanHexLongLong(&hexValue) {
-            if countElements(hex) == 6 {
+            if countElements(rgba) == 6 {
                 red   = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0
                 green = CGFloat((hexValue & 0x00FF00) >> 8)  / 255.0
                 blue  = CGFloat(hexValue & 0x0000FF) / 255.0
@@ -46,7 +46,7 @@ public extension UIColor {
                 println("invalid rgb string length")
             }
         } else {
-            println("scan hex error in string \(hex)")
+            println("scan hex error in string \(rgba)")
         }
 
         self.init(red:red, green:green, blue:blue, alpha:alpha)
