@@ -46,7 +46,7 @@ public extension UIColor {
                 println("invalid rgb string length")
             }
         } else {
-            println("scan hex error in string \(hex)")
+            println("scan hex error in string \(rgba)")
         }
 
         self.init(red:red, green:green, blue:blue, alpha:alpha)
