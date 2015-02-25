@@ -31,5 +31,16 @@ extension Array {
             }
         } while (index != nil)
     }
-    
+
+    func firstIndexForObject<U: Equatable>(object: U) -> Int? {
+        for (idx, objectToCompare) in enumerate(self) {
+            if let to = objectToCompare as? U {
+                if object == to {
+                    return idx
+                }
+            }
+        }
+        return nil
+    }
+
 }
