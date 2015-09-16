@@ -11,13 +11,13 @@ extension Array {
     /**
         Removes a given object from an array
 
-        :param: object  Object to remove
+        - parameter object:  Object to remove
     */
     mutating func removeObject<U: Equatable>(object: U) {
         var index: Int?
-        do {
+        repeat {
             index = nil
-            for (idx, objectToCompare) in enumerate(self) {
+            for (idx, objectToCompare) in self.enumerate() {
                 if let to = objectToCompare as? U {
                     if object == to {
                         index = idx
@@ -33,7 +33,7 @@ extension Array {
     }
 
     func firstIndexForObject<U: Equatable>(object: U) -> Int? {
-        for (idx, objectToCompare) in enumerate(self) {
+        for (idx, objectToCompare) in self.enumerate() {
             if let to = objectToCompare as? U {
                 if object == to {
                     return idx

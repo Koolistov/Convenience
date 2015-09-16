@@ -20,8 +20,8 @@ public extension NSURL {
             for parameter in queryString.componentsSeparatedByString("&") {
                 let parts = parameter.componentsSeparatedByString("=")
                 if parts.count > 1 {
-                    let key = (parts[0] as String).stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-                    let value = (parts[1] as String).stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+                    let key = (parts[0] as String).stringByRemovingPercentEncoding
+                    let value = (parts[1] as String).stringByRemovingPercentEncoding
                     if key != nil && value != nil {
                         info[key!] = value
                     }
