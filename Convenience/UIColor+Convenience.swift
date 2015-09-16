@@ -16,7 +16,7 @@ public extension UIColor {
         
         String may be prefixed with #. Alpha values are supported too.
 
-        :param: hex  An hexadecimal string
+        - parameter hex:  An hexadecimal string
     */
     public convenience init(hex: String) {
         var red:   CGFloat = 0.0
@@ -26,27 +26,27 @@ public extension UIColor {
 
         var rgba = hex
         if rgba.hasPrefix("#") {
-            let index   = advance(rgba.startIndex, 1)
+            let index   = rgba.startIndex.advancedBy(1)
             rgba        = rgba.substringFromIndex(index)
         }
 
         let scanner = NSScanner(string: rgba)
         var hexValue: CUnsignedLongLong = 0
         if scanner.scanHexLongLong(&hexValue) {
-            if count(rgba) == 6 {
+            if rgba.characters.count == 6 {
                 red   = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0
                 green = CGFloat((hexValue & 0x00FF00) >> 8)  / 255.0
                 blue  = CGFloat(hexValue & 0x0000FF) / 255.0
-            } else if count(rgba) == 8 {
+            } else if rgba.characters.count == 8 {
                 red   = CGFloat((hexValue & 0xFF000000) >> 24) / 255.0
                 green = CGFloat((hexValue & 0x00FF0000) >> 16) / 255.0
                 blue  = CGFloat((hexValue & 0x0000FF00) >> 8)  / 255.0
                 alpha = CGFloat(hexValue & 0x000000FF)         / 255.0
             } else {
-                println("invalid rgb string length")
+                print("invalid rgb string length")
             }
         } else {
-            println("scan hex error in string \(rgba)")
+            print("scan hex error in string \(rgba)")
         }
 
         self.init(red:red, green:green, blue:blue, alpha:alpha)
